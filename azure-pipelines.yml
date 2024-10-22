@@ -17,6 +17,6 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'pete_apps_win'
     SlotName: 'test'
-    package: 'D:/a/1/a/*.zip'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
     enableCustomDeployment: true
-    DeploymentType: 'zipDeploy'
+    DeploymentType: 'zipDeploy'    
