@@ -10,11 +10,9 @@ variables:
 steps:
     - task: AzureWebApp@1
       inputs:
-        azureSubscription: 'MCAPS-Support-REQ-75538-2024-pedromarques(b47f4b5c-a872-40c6-a011-01865fe9dd49)'
+        azureSubscription: 'Azure'
         appType: 'webApp'
-        appName: 'petedotnetwin'
-        deployToSlotOrASE: true
-        resourceGroupName: 'pete_apps_win'
-        slotName: 'test'
+        appName: 'petedotnetwin'        
+        resourceGroupName: 'pete_apps_win'        
         package: '$(System.DefaultWorkingDirectory)/**/*.zip'
         deploymentMethod: 'zipDeploy'
